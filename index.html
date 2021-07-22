@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta de dentes</title>
+    <script src = "script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="canvas">
+    <h1>Quantas pastas são vendidas no Brasil por mês?</h1>
+    <span class="form">
+    <div class="ano">
+       Ano: <input list="lista" onchange="meses()" id="listaAno" />
+        <datalist id="lista" >
+            <option value = "2019" ></option>
+            <option value = "2020" ></option>
+            <option value = "2021" ></option>
+        </datalist>   
+    </div>
+
+    <div>
+     Mês: <input list="meses" id="mes"/>
+        <datalist id="meses">
+        </datalist>
+    </div>
+    </span>
+    <button class="botao" onclick="atribuir()">Enviar</button>
+
+    <div id="concluido" class="resultado"value="">Resultado</div>
+</div>
+</body>
+</html>
